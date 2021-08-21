@@ -1,2 +1,3 @@
-mathblog/venv
+venv
 .idea
+__pycache__

@@ -6,8 +6,8 @@ help:
 
 test:
 	# launch test
-	# python -m unittest discover --start-directory blog --pattern "test_*.py"
-	python -m unittest discover -s blog -p "tests.py"
+	# python -m unittest discover --start-directory mathblog --pattern "test_*.py"
+	python -m unittest discover -s tests -p "test_*.py"
 
 install:
 	# install functional requirements
@@ -27,7 +27,7 @@ check-migrations:
 codestyle:
 	# check if teh code suite the pep8 requirement
 	flake8 blog
-	isort --profile black blog
-	black --check --diff --color blog
+	isort --profile black mathblog
+	black --check --diff --color mathblog
 	# check the link below for isort and black compatibility.
 	# https://pycqa.github.io/isort/docs/configuration/black_compatibility/#:~:text=For%20projects%20that%20officially%20use,profile%20will%20automatically%20be%20applied.
